@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starbucks Drink Selector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img src="star.png" alt="Starbucks logo" class="logo">
+    <h1>Welcome to my website! </h1>
+    
+    <div class="intro-text">
+      <h2>I am here to help you find the perfect drink to satisfy your cravings and lift your mood.</h2>
+      <h2>With a variety of options, I am sure you'll find something to enjoy.<h2>
+      <h2>Choose the type of beverage you want</h2>
+    </div>
+    <div class="button-container">
+      <a href="hot.html"><button class="hot-button">Hot</button></a>
+      <a href="cold.html"><button class="cold-button">Cold</button></a>
+      <a href="jargons.html"><button class="jargon-button">Starbucks Jargons</button></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 All rights reserved</p>
+      <p> You can contact Akshay here:</p>
+      <br>
+      <div class="site-footer">
+        <a href="https://www.linkedin.com/in/akshayjain128/"><img src="linkedinn.png" alt="LinkedIn logo" class="social-logo"></a>
+        <a href="https://www.twitter.com/oxyyjain"><img src="twitter.png" alt="Twitter logo" class="social-logo"></a>
+        <a href="https://www.instagram.com/oxyyjain"><img src="instagram.png" alt="Instagram logo" class="social-logo"></a>
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var introText = document.querySelector(".intro-text");
+          var textElements = introText.querySelectorAll("h2");
+          textElements.forEach(function(el) {
+            el.classList.add("visible");
+          });
+        });
+      </script>
+      
+
+
+  </body>
+</html>
+

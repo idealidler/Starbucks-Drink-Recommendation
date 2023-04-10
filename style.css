@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Sodo';
+    src: url('sodo-sans.woff') format('woff');
+    
+  }
+  
+  @font-face {
+    font-family: 'Sodo Light';
+    src: url('sodo-sansLight.woff') format('woff');
+  }
+
+  body {
+    font-family: 'Sodo', sans-serif;
+    background-color: #f7f7f7;
+    
+  }
+
+  .drink-container {
+    text-align: center;
+    font-family: 'Sodo Light', sans-serif;
+
+  }
+  
+  .drinks-list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    color: #00704A;
+    margin-right: 10px;
+    font-family: 'Sodo Light', sans-serif;
+    
+  }
+  
+  .drinks-list p {
+    margin: 10px 0;
+    
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000000;
+  }
+  
+  .button-container, .disclaimer, .drinks-container p {
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: 30px;
+  }
+  
+  .hot-button, .cold-button, .jargon-button, .with-caffeine-button, .without-caffeine-button {
+    background-color: #00704A;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .hot-button:hover, .cold-button:hover, .jargon-button:hover, .with-caffeine-button:hover, .without-caffeine-button:hover {
+    background-color: #004d1a;
+  }
+  
+  .drink-name {
+    font-weight: bold;
+    color: #00704A;
+    font-family: 'Sodo', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    right: 1;
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Footer styles */
+  footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00704A;
+    justify-content: flex-start;
+  }
+  
+  /* .site-footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+  } */
+  
+  .site-footer .footer-links {
+    margin-top: 10px;
+  }
+  
+  .site-footer .social-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .hot-page .cold-button {
+    position: absolute;
+    top: 0;
+    left: 10;
+  }
+  
+  .intro-text h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .intro-text h2.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
